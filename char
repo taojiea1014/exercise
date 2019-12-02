@@ -1,0 +1,80 @@
+x=c(1,1,1,2,2,3,1,2,4,1,2,4,4,2,3,4,1,2,3)
+y=letters[x]
+match(y,letters[1:4])
+y
+
+nchar("welcome to HK")
+nchar("欢迎来到北京")
+
+paste(1:4,collapse="")
+paste(1:4,sep="")
+paste("A",1:4,sep="_")
+
+paste(LETTERS[1:4],1:4,collapse="_")
+paste(LETTERS[1:4],1:4,sep="_",collapse="|")
+paste(LETTERS[1:4],1:4)
+
+txt=c("bear","clubbear","11","生日")
+grep("bear",txt)
+gsub("生日","happy birthday",txt)
+
+salary=c("22万","30万","50万")
+gsub("万","0000",salary)
+
+
+y="abc"
+y
+length(y)
+nchar(y)
+
+myword<-sample(LETTERS,10,replace=FALSE)
+paste(myword,collapse="-")
+
+paste
+paste0
+
+url<-"http://study.163.com/category/400000000146050#/?p="
+ 
+ num<-1:22
+
+ myurl<-paste(url,num,sep="");myurl
+
+myurl<-paste0(url,num);myurl
+
+mydate<-paste(2001:2005,"06",sep="-");mydate
+
+
+library(stringr)
+str_c(myword,collapse ="")
+
+
+str_c(myword,sep ="")
+
+str_c(url,num,sep = "")
+
+library(dplyr)
+
+library(sca)
+
+percent(seq(0,0.1,0.01),d=2,sep="") #其中的参数控制百分比输出的小数点后位数。
+
+library(scales)
+
+percent(runif(10,0,1))         #percent函数说明了目前没法看到如何控制小数点显式位数。
+
+
+sprintf("%d%%",1:10) #遍历百分比
+
+sprintf("%d-%d-%d",2001,12,1:30) #遍历日期：
+
+sprintf("有%.1f%%的人评价变形金刚5较差",30.7)
+
+sprintf("%s是阿里巴巴的%s","马云","老板")
+
+txt=c("bear","clubbear","11","生日")
+grep("bear",txt)
+
+
+gsub("生日","happy birthday",txt)
+
+substr("Equator",3,5)
